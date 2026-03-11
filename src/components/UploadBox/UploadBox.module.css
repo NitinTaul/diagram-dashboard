@@ -1,0 +1,86 @@
+.zone {
+  border: 1.5px dashed #1a2740;
+  border-radius: 6px;
+  background: #0d1117;
+  padding: 36px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  outline: none;
+}
+.zone:hover, .drag {
+  border-color: #f59e0b;
+  background: #130f00;
+}
+.title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #64748b;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.hint {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 11px;
+  color: #293d52;
+}
+.hasFile {
+  border: 1px solid #1a2740;
+  border-radius: 6px;
+  background: #0d1117;
+  padding: 13px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.fileName {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 12px;
+  color: #10b981;
+  flex: 1;
+  min-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.fileSize {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 11px;
+  color: #293d52;
+}
+.btnAmber {
+  margin-top: 4px;
+  padding: 8px 18px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background: #f59e0b;
+  color: #080b10;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background 0.15s;
+}
+.btnAmber:hover { background: #fbbf24; }
+.btnGhost {
+  padding: 5px 12px;
+  border-radius: 4px;
+  border: 1px solid #1a2740;
+  cursor: pointer;
+  background: transparent;
+  color: #64748b;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: border-color 0.15s, color 0.15s;
+}
+.btnGhost:hover { border-color: #f59e0b; color: #f59e0b; }

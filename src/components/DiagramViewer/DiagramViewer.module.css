@@ -1,0 +1,138 @@
+.card {
+  background: #0d1117;
+  border: 1px solid #1a2332;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.header {
+  padding: 10px 16px;
+  border-bottom: 1px solid #1a2332;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 12px;
+  color: #3a5068;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.zoomRow {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.zoomVal {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 11px;
+  color: #f59e0b;
+  min-width: 40px;
+  text-align: center;
+}
+.iconBtn {
+  width: 28px;
+  height: 28px;
+  background: #111827;
+  border: 1px solid #1a2332;
+  color: #4a6080;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  transition: border-color 0.15s, color 0.15s;
+}
+.iconBtn:hover {
+  border-color: #f59e0b;
+  color: #f59e0b;
+}
+.iconBtnSm {
+  font-size: 10px;
+  letter-spacing: 0.5px;
+}
+.body {
+  flex: 1;
+  min-height: 440px;
+  position: relative;
+  background: #070910;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.gridBg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(#0d1320 1px, transparent 1px),
+    linear-gradient(90deg, #0d1320 1px, transparent 1px);
+  background-size: 28px 28px;
+  pointer-events: none;
+}
+.imgWrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+}
+.imgWrap:active { cursor: grabbing; }
+.img {
+  max-width: 90%;
+  max-height: 420px;
+  object-fit: contain;
+  transform-origin: center center;
+  transition: transform 0.15s ease, filter 0.3s ease;
+  pointer-events: none;
+}
+.highlighted {
+  filter: drop-shadow(0 0 14px #f59e0b) drop-shadow(0 0 30px #f59e0b66);
+}
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #1a2740;
+  z-index: 1;
+}
+.emptyText {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 12px;
+}
+.footer {
+  padding: 8px 16px;
+  border-top: 1px solid #1a2332;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footerLabel {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 10px;
+  color: #3a5068;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 9px;
+  border-radius: 3px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+}
+.footerType {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 10px;
+  color: #3a5068;
+}
